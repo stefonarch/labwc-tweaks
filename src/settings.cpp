@@ -44,12 +44,17 @@ void initSettings(std::vector<std::shared_ptr<Setting>> *settings)
 
     settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/pointerSpeed",
                                                   LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_INT, 8));
-//    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/accelProfile",
-//                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_STRING, ""));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/accelProfile",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_STRING,
+                                                  "Flat"));
+
     settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/tap",
                                                   LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
 
-   // settings->push_back tab button map
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/tapButtonMap",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_STRING,
+                                                  "lrm"));
 
     settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/tapAndDrag",
                                                   LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
@@ -65,6 +70,18 @@ void initSettings(std::vector<std::shared_ptr<Setting>> *settings)
 
     settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/disableWhileTyping",
                                                   LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/clickMethod",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_STRING,
+                                                  "none"));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/scrollMethod",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_STRING,
+                                                  "twoFinger"));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/sendEventsMode",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_STRING,
+                                                  "yes"));
 
     // Language
     settings->push_back(std::make_shared<Setting>("XKB_DEFAULT_LAYOUT", LAB_FILE_TYPE_ENVIRONMENT,

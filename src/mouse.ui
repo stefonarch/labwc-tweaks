@@ -90,13 +90,13 @@
       <number>2</number>
      </property>
      <property name="minimum">
-      <double>-1.00</double>
+      <double>-1.000000000000000</double>
      </property>
      <property name="maximum">
       <double>1.000000000000000</double>
      </property>
      <property name="singleStep">
-      <double>0.10</double>
+      <double>0.100000000000000</double>
      </property>
     </widget>
    </item>
@@ -307,7 +307,7 @@
    <item row="15" column="0">
     <widget class="QLabel" name="label_sendEventsMode">
      <property name="text">
-      <string>Send Events Mode</string>
+      <string>Touchpad</string>
      </property>
     </widget>
    </item>
@@ -343,16 +343,16 @@
       <number>2</number>
      </property>
      <property name="minimum">
-      <double>0.100000000000000</double>
+      <double>0.10</double>
      </property>
      <property name="maximum">
-      <double>5.000000000000000</double>
+      <double>5.00</double>
      </property>
      <property name="singleStep">
-      <double>0.100000000000000</double>
+      <double>0.10</double>
      </property>
      <property name="value">
-      <double>1.000000000000000</double>
+      <double>1.00</double>
      </property>
     </widget>
    </item>
