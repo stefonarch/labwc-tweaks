@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>251</width>
-    <height>153</height>
+    <width>450</width>
+    <height>600</height>
    </rect>
   </property>
   <layout class="QFormLayout" name="layPage2">
@@ -57,6 +57,316 @@
        <width>0</width>
        <height>33</height>
       </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_leftHanded">
+     <property name="text">
+      <string>Left Handed</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QCheckBox" name="leftHanded">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>33</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_pointerSpeed">
+     <property name="text">
+      <string>Pointer Speed</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QDoubleSpinBox" name="pointerSpeed">
+     <property name="minimum">
+      <double>-1.00</double>
+     </property>
+     <property name="maximum">
+      <double>1.00</double>
+     </property>
+     <property name="singleStep">
+      <double>0.10</double>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_accelProfile">
+     <property name="text">
+      <string>Acceleration Profile</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QComboBox" name="accelProfile">
+     <item>
+      <property name="text">
+       <string>flat</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>adaptive</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_tap">
+     <property name="text">
+      <string>Tap to Click</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QCheckBox" name="tap">
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>33</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_tapButtonMap">
+     <property name="text">
+      <string>Tap Button Map</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QComboBox" name="tapButtonMap">
+     <item>
+      <property name="text">
+       <string>lrm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>lmr</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_tapAndDrag">
+     <property name="text">
+      <string>Tap and Drag</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QCheckBox" name="tapAndDrag">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>33</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_dragLock">
+     <property name="text">
+      <string>Drag Lock</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QCheckBox" name="dragLock">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>33</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_threeFingerDrag">
+     <property name="text">
+      <string>Three Finger Drag</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QCheckBox" name="threeFingerDrag">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>33</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_middleEmulation">
+     <property name="text">
+      <string>Middle Button Emulation</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QCheckBox" name="middleEmulation">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>33</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="label_disableWhileTyping">
+     <property name="text">
+      <string>Disable While Typing</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="QCheckBox" name="disableWhileTyping">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>33</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="label_clickMethod">
+     <property name="text">
+      <string>Click Method</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QComboBox" name="clickMethod">
+     <item>
+      <property name="text">
+       <string>none</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>buttonareas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>clickfinger</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLabel" name="label_scrollMethod">
+     <property name="text">
+      <string>Scroll Method</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="QComboBox" name="scrollMethod">
+     <item>
+      <property name="text">
+       <string>twofinger</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>onbuttondown</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>none</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_sendEventsMode">
+     <property name="text">
+      <string>Send Events Mode</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="QComboBox" name="sendEventsMode">
+     <item>
+      <property name="text">
+       <string>enabled</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>disabled</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>disabled-on-external-mouse</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_calibrationMatrix">
+     <property name="text">
+      <string>Calibration Matrix</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QLineEdit" name="calibrationMatrix">
+     <property name="placeholderText">
+      <string>1 0 0 0 1 0 0 0 1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_scrollFactor">
+     <property name="text">
+      <string>Scroll Factor</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1">
+    <widget class="QDoubleSpinBox" name="scrollFactor">
+     <property name="minimum">
+      <double>0.10</double>
+     </property>
+     <property name="maximum">
+      <double>5.00</double>
+     </property>
+     <property name="singleStep">
+      <double>0.10</double>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="value">
+      <double>1.00</double>
      </property>
     </widget>
    </item>
