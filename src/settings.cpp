@@ -39,6 +39,33 @@ void initSettings(std::vector<std::shared_ptr<Setting>> *settings)
     settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/naturalScroll",
                                                   LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
 
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/leftHanded",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/pointerSpeed",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_INT, 8));
+//    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/accelProfile",
+//                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_STRING, ""));
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/tap",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
+   // settings->push_back tab button map
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/tapAndDrag",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/dragLock",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/threeFingerDrag",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/middleEmulation",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
+    settings->push_back(std::make_shared<Setting>("/labwc_config/libinput/device/disableWhileTyping",
+                                                  LAB_FILE_TYPE_RCXML, LAB_VALUE_TYPE_BOOL, 0));
+
     // Language
     settings->push_back(std::make_shared<Setting>("XKB_DEFAULT_LAYOUT", LAB_FILE_TYPE_ENVIRONMENT,
                                                   LAB_VALUE_TYPE_STRING, "us"));
